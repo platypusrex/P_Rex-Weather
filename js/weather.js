@@ -231,6 +231,7 @@
         $(this).on('click', function(){
             $('.short-forecast').slideUp('fast').promise().done(function(){
                 $($('.forecast-extended')[i]).slideDown('fast');
+                return false;
             });
         });
     });
